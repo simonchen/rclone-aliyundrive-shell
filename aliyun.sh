@@ -41,6 +41,6 @@ sleep 3
 if [ ! -d /mnt/aliyun ]; then
         mkdir /mnt/aliyun
 fi
-/usr/bin/rclone mount webdav:/ /mnt/aliyun/ --async-read --dir-cache-time 15s --cache-dir /tmp --allow-other --vfs-cache-mode writes --allow-non-empty 2>&1 > /dev/null &
+/usr/bin/rclone mount webdav:/ /mnt/aliyun/ --async-read --dir-cache-time 15s --cache-dir /tmp --allow-other --vfs-cache-mode writes --allow-non-empty 2>&1 > /dev/null 
 
 exit 0
